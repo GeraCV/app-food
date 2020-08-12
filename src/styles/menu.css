@@ -1,0 +1,14 @@
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgb(241, 238, 238);
+
+}
+
+.c-food, .c-drinks {
+  border: 1px solid rgb(212, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
