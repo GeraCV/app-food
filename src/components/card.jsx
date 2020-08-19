@@ -1,26 +1,7 @@
 import React from 'react'
 import '../styles/card.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { ADD_TO_CART, DELETE_TO_CART } from '../redux/actions'
-
-const addCart = ({ name, image, price, id }) => {
-  return (
-    {
-      type: ADD_TO_CART,
-      data: { name, image, price, id }
-    }
-  )
-}
-
-const deleteCart = ({ name, image, price, id }) => {
-  return (
-    {
-      type: DELETE_TO_CART,
-      data: { name, image, price, id }
-    }
-  )
-}
-
+import { addCart, deleteCart } from '../redux/actionCreators'
 
 const Card = ({ image, name, ingredients, description, price, id }) => {
 
@@ -58,7 +39,6 @@ const Card = ({ image, name, ingredients, description, price, id }) => {
               onClick={() => addToCart({ name, image, price, id })}
 
             > Agregar </button>
-
         }
       </div>
     </article>

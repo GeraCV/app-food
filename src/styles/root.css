@@ -11,9 +11,3 @@ body {
   margin-top: 5rem;
 }
 
-.container-message {
-  z-index: 3;
-  font-size: 3rem;
-  background: blueviolet;
-  color: white;
-}
