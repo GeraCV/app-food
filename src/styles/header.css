@@ -10,8 +10,14 @@
   padding: 1rem ;
   width: 100%;
   height: 5rem;
-
+  text-decoration: none;
 }
+
+.header-title, .number-card {
+  color: white;
+}
+
+
 
 @media screen and (min-width: 750px) {
   .main-header {

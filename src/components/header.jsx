@@ -11,9 +11,11 @@ const Header = () => {
   return (
     <header className="main-header">
       <div className="container-title">
-        <h1 className="header-title"> Food and drinks </h1>
+        <NavLink to="/" className="enlace">
+          <h1 className="header-title"> Food and drinks </h1>
+        </NavLink>
       </div>
-      <NavLink to="/carrito-compra">
+      <NavLink to="/carrito-compra" className="enlace">
         <div className="cart">
           <h3 className="number-card"> Cart : {cart.length} </h3>
         </div>

@@ -10,7 +10,7 @@ const intialStateFood = {
 const intialStateCart = {
   cart: [],
   idCart: [],
-  cartShop: []
+  prices: []
 }
 
 
@@ -30,40 +30,32 @@ const cartReducer = (state = intialStateCart, action) => {
   switch (action.type) {
     case ADD_TO_CART:
 
-      const id = action.data.id
+      const idATC = action.data.id
+      const priceATC = action.data.price
 
-      if (state.idCart.find(d => d === id)) return state
+      if (state.idCart.find(d => d === idATC)) return state
       return {
         cart: state.cart.concat(action.data),
-        idCart: state.idCart.concat(id)
+        idCart: state.idCart.concat(idATC),
+        prices: state.prices.concat(priceATC)
       }
 
 
     case DELETE_TO_CART:
 
-      const ident = action.data.id
+      const idDTC = action.data.id
+      const priceDTC = action.data.price
 
       return {
         ...state,
-        cart: state.cart.filter(el => el.id !== ident),
-        idCart: state.idCart.filter(d => d !== ident)
-      }
-
-    case SEND_PRICE:
-      const idProductCart = action.data.id
-
-      if (state.cartShop.find(ed => ed === idProductCart)) return state
-      return {
-        ...state,
-        cartShop: state.cartShop.concat(action.data)
+        cart: state.cart.filter(el => el.id !== idDTC),
+        idCart: state.idCart.filter(d => d !== idDTC),
+        prices: state.prices.filter(d => d !== priceDTC)
       }
 
     default:
       return state
   }
-
 }
-
-
 
 export default createStore(combineReducers({ rootReducer, cartReducer }), composeWithDevTools(applyMiddleware(thunk)))

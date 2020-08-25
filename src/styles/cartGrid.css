@@ -1,21 +1,27 @@
-.container-cards {
+.container-gridCart {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   margin: 2rem;
 }
 
+.container-price-total{
+display: flex;
+justify-content: flex-end;
+margin: 2rem;
+}
+
+.text-t {
+  font-size: 1.6rem;
+  color: rgb(126, 122, 122);
+}
+
 
 @media screen and (min-width: 750px) {
-  .container-cards {
+  .container-gridCart {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 
-@media screen and (min-width: 1024px) {
- .container-cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
