@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { GET_FOOD_AND_DRINKS, ADD_TO_CART, DELETE_TO_CART, SEND_PRICE } from './actions'
+import { GET_FOOD_AND_DRINKS, ADD_TO_CART, DELETE_TO_CART } from './actions'
 
 const intialStateFood = {
   food: []

@@ -3,7 +3,7 @@ import '../styles/cart.css'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { deleteCart } from '../redux/actionCreators'
-import { SEND_PRODUCT } from '../redux/actions'
+
 
 
 // const sendProduct = ({ id, name, price }) => {

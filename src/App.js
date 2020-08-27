@@ -6,8 +6,11 @@ import Header from './components/header'
 import Menu from './components/menu'
 import GridCard from './components/gridCard'
 import CartGrid from './components/cartGrid'
+import Foods from './components/foods'
+import Drinks from './components/drinks'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Message from './components/message'
 
 store.dispatch(getFoodDrink())
 
@@ -18,8 +21,11 @@ function App() {
         <Router>
           <Header />
           <Menu />
+          <Message />
           <Switch>
-            <Route path="/carrito-compra" component={CartGrid} />
+            <Route path="/cart-buy" component={CartGrid} />
+            <Route path="/drinks" component={Drinks} />
+            <Route path="/foods" component={Foods} />
             <Route path="/" component={GridCard} />
           </Switch>
         </Router>

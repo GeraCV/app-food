@@ -15,7 +15,7 @@ const Header = () => {
           <h1 className="header-title"> Food and drinks </h1>
         </NavLink>
       </div>
-      <NavLink to="/carrito-compra" className="enlace">
+      <NavLink to="/cart-buy" className="enlace">
         <div className="cart">
           <h3 className="number-card"> Cart : {cart.length} </h3>
         </div>
