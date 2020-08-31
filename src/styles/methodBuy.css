@@ -1,0 +1,49 @@
+.container-payment-method {
+  margin: 6rem 1.5rem 1rem ;
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, .25);
+  border-radius: .5rem;
+
+  
+}
+
+.container-select-method {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  padding: .5rem 0;
+  border-bottom: 1px solid rgb(185, 184, 184); 
+}
+
+.container-method {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.title-method {
+  cursor: pointer;
+}
+
+.btn-select {
+  padding:  .5rem;
+  margin: 1rem;
+  border-radius: .3rem;
+  border-style: none;
+  color: white;
+  background: rgb(72, 92, 121);
+  font-size: .8rem;
+  width: calc(100% - 2rem);
+  cursor: pointer;
+}
+
+.btn-select:hover {
+    background: rgb(95, 121, 160);
+}
+
+
+.text-method {
+  margin: 1rem .5rem;
+  text-align: center;
+  
+}
+

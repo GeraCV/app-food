@@ -1,20 +1,20 @@
 import React from 'react'
-import Card from './card'
 import { useSelector } from 'react-redux'
+import CardProduct from '../cardProduct'
 
-const Foods = () => {
+const Drinks = () => {
 
   const state = useSelector(state => state.rootReducer.food)
-  const foods = state.filter(el => {
-    return el.id.startsWith('food')
+  const drinks = state.filter(el => {
+    return el.id.startsWith('drink')
   })
 
   return (
     <div className="container-cards">
       {
-        foods.map(el => {
+        drinks.map(el => {
           return (
-            <Card
+            <CardProduct
               key={el.id}
               id={el.id}
               image={el.image}
@@ -30,4 +30,4 @@ const Foods = () => {
   )
 }
 
-export default Foods
+export default Drinks

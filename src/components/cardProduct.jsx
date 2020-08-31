@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/card.css'
+import '../styles/cardProduct.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { addCart, deleteCart } from '../redux/actionCreators'
 
-const Card = ({ image, name, ingredients, description, price, id }) => {
+const CardProduct = ({ image, name, ingredients, description, price, id }) => {
 
   const dispatch = useDispatch()
   const state = useSelector(state => state.cartReducer.idCart)
@@ -45,4 +45,4 @@ const Card = ({ image, name, ingredients, description, price, id }) => {
   )
 }
 
-export default Card
+export default CardProduct

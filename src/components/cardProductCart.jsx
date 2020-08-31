@@ -1,22 +1,11 @@
 import React from 'react'
-import '../styles/cart.css'
+import '../styles/cardProductCart.css'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { deleteCart } from '../redux/actionCreators'
 
 
-
-// const sendProduct = ({ id, name, price }) => {
-//   return (
-//     {
-//       type: SEND_PRODUCT,
-//       data: { id, name, price }
-
-//     }
-//   )
-// }
-
-const Cart = ({ name, image, price, id }) => {
+const CardProductCart = ({ name, image, price, id }) => {
 
   const state = useSelector(state => state.cartReducer.idCart)
   const dispatch = useDispatch()
@@ -24,10 +13,6 @@ const Cart = ({ name, image, price, id }) => {
   const deleteToCart = ({ name, image, price, id }) => {
     dispatch(deleteCart({ name, image, price, id }))
   }
-  // const sendTheProduct = ({ id, name, price }) => {
-  //   dispatch(sendProduct({ id, name, price }))
-  // }
-
 
 
   return (
@@ -42,14 +27,13 @@ const Cart = ({ name, image, price, id }) => {
         <div className="selection">
         </div>
         <div className="container-btn-delete">
-          {
-            state.find(el => el === id)
-              ? < button
-                className="btn-delete"
-                onClick={() => deleteToCart({ name, image, price, id })}
-              >
-                Eliminar </button>
-              : ''
+          {state.find(el => el === id)
+            ? < button
+              className="btn-delete"
+              onClick={() => deleteToCart({ name, image, price, id })}
+            >
+              Eliminar </button>
+            : ''
           }
         </div>
       </div>
@@ -57,4 +41,4 @@ const Cart = ({ name, image, price, id }) => {
   )
 }
 
-export default Cart
+export default CardProductCart

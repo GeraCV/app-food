@@ -1,9 +1,9 @@
 import React from 'react'
-import Card from './card'
-import '../styles/gridCard.css'
+import CardProduct from '../cardProduct'
+import '../../styles/allProducts.css'
 import { useSelector } from 'react-redux'
 
-const GridCard = () => {
+const AllProducts = () => {
 
   const food = useSelector(state => state.rootReducer.food)
 
@@ -12,7 +12,7 @@ const GridCard = () => {
     <div className="container-cards">
       {food.map(el => {
         return (
-          <Card
+          <CardProduct
             key={el.id}
             id={el.id}
             image={el.image}
@@ -28,4 +28,5 @@ const GridCard = () => {
   )
 }
 
-export default GridCard
+export default AllProducts
+

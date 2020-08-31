@@ -7,7 +7,7 @@
 
 .container-price-total{
 display: flex;
-justify-content: flex-end;
+justify-content: center;
 margin: 2rem;
 }
 
@@ -16,6 +16,19 @@ margin: 2rem;
   color: rgb(126, 122, 122);
 }
 
+.container-btn-buy {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-buy {
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border-style: none;
+  color: white;
+  background: rgb(54, 70, 92);
+  font-size: 1rem;
+}
 
 @media screen and (min-width: 750px) {
   .container-gridCart {
@@ -23,5 +36,3 @@ margin: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-
