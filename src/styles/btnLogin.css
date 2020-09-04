@@ -1,0 +1,11 @@
+.btn-login {
+    border-style: none;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  /* border: 1px solid rgb(204, 204, 204);  */
+  background: var rgb(229, 234, 241) ;
+  color: rgb(27, 36, 48);
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  margin: 1rem;
+}

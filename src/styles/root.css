@@ -15,3 +15,8 @@ body {
   text-decoration: none;
 }
 
+.flex-item {
+  display: flex;
+  align-items: center;
+}
+

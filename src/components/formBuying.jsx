@@ -37,7 +37,7 @@ const FormBuying = () => {
     image.alt = 'Check'
     showMessage.classList.add('showMessage')
     image.classList.add('img-message')
-    text.classList.add('text-message')
+    text.classList.add('text-message-buy')
     body.appendChild(showMessage)
   }
 

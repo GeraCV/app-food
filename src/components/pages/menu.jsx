@@ -7,7 +7,7 @@ const Menu = () => {
     <div className="menu">
       <NavLink to="/foods" className="enlace">
         <div className="c-food">
-          <p className="text-menu"> Comida </p>
+          <p className="text-menu"> Comidas </p>
         </div>
       </NavLink>
       <NavLink to="/drinks" className="enlace">

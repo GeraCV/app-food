@@ -5,6 +5,16 @@
   margin: 2rem;
 }
 
+.subtitle-principal {
+  color: rgb(27, 36, 48);
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.container-subtitle {
+  padding: 1rem 0;
+}
+
 
 @media screen and (min-width: 750px) {
   .container-cards {
